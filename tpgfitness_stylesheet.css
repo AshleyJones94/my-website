@@ -1,0 +1,1009 @@
+/* MAIN BODY */
+
+body {
+    background-image: linear-gradient(to right, #e30320 0%, #58000c 100%);
+    font-family: "Zalando Sans";
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Zalando Sans"
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Zalando Sans"
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Zalando Sans"
+}
+
+p {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Zalando Sans"
+}
+
+
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    background: linear-gradient(to right, #e30320 0%, #58000c 100%);
+    justify-content: left;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    align-items:center;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 15px;
+    padding: 0 15px;
+    color: white;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    transition: 0.2s;
+    color: darkgray;
+}
+
+#logo {
+    box-sizing: border-box;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    margin-left: 20px;
+    width: 140px;
+    float: left;
+}
+
+
+/* INTRO HERO SECTION */
+
+#hero-section {
+    padding: 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 800px;
+    display: flex;
+    text-align: left;
+}
+
+.hero-container {
+    position: relative;
+    width: 550px;
+    height: auto;
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+}
+
+.text-container {
+    position: relative;
+    width: 550px;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+    color: white;
+}
+
+.hero-img-container {
+    position: relative;
+    width: 600px;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+}
+
+#hero-image {
+    height: 700px;
+    width: 720px;
+    position: relative;
+    left: -40px;
+    top: -46px;
+}
+
+#hero h1 {
+    color: white;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px 0px 15px;
+}
+
+#hero h3 {
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#hero p {
+    color: white;
+    text-align: left;
+    margin: 0px;
+}
+
+.hero-button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 150px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: white;
+    color: darkslategrey;
+    transition: 0.2s;
+}
+
+/* ARTICLES SECTION */
+
+#articles-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 600px;
+    display: flex;
+    text-align: left;
+}
+
+.articles-container {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.see-transformations-button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 230px;
+    height: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.see-transformations-button:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+.article {
+    background-color: rgb(88, 0, 12, 1);
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+
+.article h3 {
+    position: absolute;
+    top: 41%;
+    left: 43%;
+    color: transparent;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.article:hover h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+
+.image:hover {
+    transform-box: fill-box;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgb(88, 88, 88);
+    background-color: #58000c;
+    transition: 0.2s;
+    opacity: 0.4;
+}
+
+
+/* ABOUT ME SECTION */
+
+.aboutme-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 550px;
+    display: flex;
+    text-align: left;
+}
+
+.aboutme-container {
+    background-image: linear-gradient(to right, #e30320 0%, #58000c 100%);
+    padding: 5%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+}
+
+.aboutme-text {
+    color: white;
+    height: 80%;
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0px;
+    text-align: left;
+}
+
+.mypicture-img-container {
+    position: relative;
+    width: 350px;
+    box-sizing: border-box;
+    margin: 0%;
+    display: block;
+}
+
+.aboutme-image {
+    height: 400px;
+    width: auto;
+    position: relative;
+    left: 20px;
+    top: -52px;
+}
+
+/* BENEFITS SECTION */
+
+#why-work-with-me-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 700px;
+    text-align: left;
+    display: flex;
+}
+
+.why-work-with-me-container {
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wwwm-text-container {
+    color: black;
+    position: relative;
+    height: auto;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wwwm-article h3 {
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.wwwm-article p {
+    color: black;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.wwwm-image {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+
+/* FAQ SECTION */
+
+#faq-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: left;
+    display: flex;
+}
+
+.faq-container {
+    background-image: linear-gradient(to right, #e30320 0%, #58000c 100%);
+    padding: 5%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+}
+
+.faq-text {
+    color: black;
+    height: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.faq-text h2 {
+    color: white;
+}
+
+.questionandanswerContainer {
+    background-color: rgb(241, 241, 241, 1.0);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+}
+
+.question {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0s;
+    padding: 5px;
+}
+
+.answer {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+    height: auto;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+}
+
+#faqbutton {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+#faqbutton:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+/* FREE RESOURCES SECTION */
+
+#resources-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 700px;
+    text-align: left;
+    display: flex;
+}
+
+.resources-container {
+    padding: 0%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resource {
+    background-color: rgb(88, 0, 12, 1);
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+.resource h3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: transparent;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.resource:hover h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.resource-image {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+
+.resource-image:hover {
+    transform-box: fill-box;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgb(88, 88, 88);
+    background-color: #58000c;
+    transition: 0.2s;
+    opacity: 0.4;
+}
+
+.resources-button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 230px;
+    height: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.resources-button:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* MISSION STATEMENT SECTION */
+
+#missionstatement-section {
+    background-image: url(/Images/Hannah-chinup.jpeg);
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    max-width: auto;
+}
+
+#overlay {
+    position: static;
+    width: 100%;
+    height: auto;
+    background-color: rgba(88, 0, 12, 0.7);
+    z-index: 2;
+}
+
+.missionstatement-text {
+    color: white;
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 350px;
+    padding-right: 350px;
+    box-sizing: border-box;
+}
+
+/* CONTACT FORM SECTION */
+
+.contact-section {
+    background-color: rgba(3,3,3,45%);
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+.contact p {
+    margin-bottom: 50px;
+}
+
+.contact h2, .contact p {
+    color: white;
+}
+
+.contact-form {
+    max-width: 800px;
+    display: flex;
+    text-align: left;
+    max-width: auto;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.message textarea {
+    border-radius: 5px;
+    border: 0px;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.contact-details input {
+    width: 90%;
+    border-radius: 5px;
+    border: 0px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.message button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 140px;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message button:hover {
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+/* TRANSFORMATIONS PAGE HEADER */
+
+#transformations-heading-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 50px 0px 20px 0px;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+}
+
+.heading-section-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.heading-section-text-container {
+    position: relative;
+    width: 60%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px;
+    display: block;
+    color: white;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#transformations-heading-section h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0px 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+#transformations-heading-section h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#transformations-heading-section p {
+    color: black;
+    margin: 0px;
+    text-align: center;
+}
+
+.transformations-button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 150px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.transformations-button:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+#transformations-gallery-section {
+    background-color: white;
+    padding: 0% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    display: flex;
+}
+
+.transformations-gallery-container {
+    height: auto;
+    margin: 10px 0px 20px 0px;
+}
+
+.gallery-container {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: centre;
+    justify-content: space-between;
+}
+
+.transformation {
+    background-color: rgb(88, 0, 12, 1);
+    width: 350px;
+    height: 350px;
+    margin-bottom: 40px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: contain;
+}
+
+.transformation h3 {
+    position: absolute;
+    top: 41%;
+    left: 43%;
+    color: transparent;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.transformation:hover h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.image {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    object-fit: cover;
+}
+
+.image:hover {
+    transform-box: fill-box;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgb(88, 88, 88);
+    background-color: #58000c;
+    transition: 0.2s;
+    opacity: 0.4;
+}
+
+
+/* TRANSFORMATIONS FAQ SECTION */
+
+#transformations-faq-section {
+    background-color: white;
+    padding: 5% 10%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    text-align: left;
+    display: flex;
+}
+
+.transformations-faq-container {
+    background-image: linear-gradient(to right, #e30320 0%, #58000c 100%);
+    padding: 5%;
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+}
+
+.transformations-faq-text {
+    color: black;
+    height: auto;
+    width: 100%;
+    text-align: left;
+}
+
+.transformations-faq-text h2 {
+    color: white;
+}
+
+.questions-and-answers-container {
+    display: flex;
+    width: 100%;
+    margin: 0px 10px 0px 0px;
+}
+
+#questions-and-answers-columns {
+    border: 3px dashed blue;
+    width: 50%;
+}
+
+.transformations-answer-container {
+    border: 2px dashed green;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    display: block;
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+.transformations-questionandanswerContainer {
+    border: 2px dashed blue;
+    background-color: rgb(241, 241, 241, 1.0);
+    border-radius: 10px;
+    padding: 20px 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 3px 10px rgb(88, 88, 88);
+    display: flex;
+    height: 50px;
+}
+
+.transformations-article-img {
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.transformations-article-button {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.transformations-article-button:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+.transformations-article-text {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Zalando Sans";
+    color: white;
+}
+
+.question-h1 {
+    border: 2px dashed blue;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.transformations-question {
+    border: 1px dashed blue;
+    background-color: transparent;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 0s;
+    padding: 5px;
+}
+
+.transformations-answer {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+    height: auto;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+}
+
+#transformations-faqbutton {
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    background: darkslategrey;
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+#transformations-faqbutton:hover {
+    background: #e30320;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* FOOTER */
+
+#footer {
+    height: 100px;
+    background-color: rgba(3,3,3,45%);
+}
+    
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.copyright {
+    color: white;
+}
